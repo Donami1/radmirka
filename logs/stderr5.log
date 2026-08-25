@@ -1,0 +1,89 @@
+2026-08-22 01:19:04,618 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 01:19:04,705 INFO aiogram.dispatcher: Start polling
+2026-08-22 01:19:04,787 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-22 01:19:24,237 INFO aiogram.event: Update id=500595304 is handled. Duration 216 ms by bot id=8530473724
+2026-08-22 01:19:43,396 INFO aiogram.event: Update id=500595305 is handled. Duration 172 ms by bot id=8530473724
+2026-08-22 01:19:53,169 INFO adminbot: #filteradd chat=Radmirka | Test mod=1963464540 слово: иди нахуй
+2026-08-22 01:19:53,288 INFO aiogram.event: Update id=500595306 is handled. Duration 292 ms by bot id=8530473724
+2026-08-22 01:20:00,267 INFO aiogram.event: Update id=500595307 is handled. Duration 418 ms by bot id=8530473724
+2026-08-22 01:20:17,988 INFO aiogram.event: Update id=500595308 is handled. Duration 235 ms by bot id=8530473724
+2026-08-22 01:20:36,750 INFO adminbot: #roleadd chat=Radmirka | Test mod=1963464540 роль Долбаеб (ранг 2)
+2026-08-22 01:20:36,857 INFO aiogram.event: Update id=500595309 is handled. Duration 242 ms by bot id=8530473724
+2026-08-22 01:21:01,741 INFO aiogram.event: Update id=500595310 is handled. Duration 141 ms by bot id=8530473724
+2026-08-22 01:21:04,334 INFO aiogram.event: Update id=500595311 is handled. Duration 218 ms by bot id=8530473724
+2026-08-22 01:21:20,354 INFO aiogram.event: Update id=500595312 is handled. Duration 181 ms by bot id=8530473724
+2026-08-22 01:21:24,751 INFO aiogram.event: Update id=500595313 is handled. Duration 131 ms by bot id=8530473724
+2026-08-22 01:21:34,938 INFO aiogram.event: Update id=500595314 is not handled. Duration 93 ms by bot id=8530473724
+2026-08-22 01:21:34,938 ERROR aiogram.event: Cause exception while process update id=500595314 by bot id=8530473724
+IndexError: No item with that key
+Traceback (most recent call last):
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 565, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 1211, in cmd_role
+    await message.answer(text, reply_markup=role_pick_kb(target.id, rows))
+                                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 1150, in role_pick_kb
+    callback_data=f"role:{target_uid}:{r['rowid']}",
+                                       ~^^^^^^^^^
+IndexError: No item with that key
+2026-08-22 01:21:53,056 INFO aiogram.event: Update id=500595315 is handled. Duration 130 ms by bot id=8530473724
+2026-08-22 01:22:03,496 INFO aiogram.event: Update id=500595316 is handled. Duration 144 ms by bot id=8530473724
+2026-08-22 01:22:30,478 INFO aiogram.event: Update id=500595317 is handled. Duration 134 ms by bot id=8530473724

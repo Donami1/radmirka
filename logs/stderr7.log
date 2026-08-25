@@ -1,0 +1,3 @@
+2026-08-22 02:03:25,856 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 02:03:25,933 INFO aiogram.dispatcher: Start polling
+2026-08-22 02:03:26,007 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'

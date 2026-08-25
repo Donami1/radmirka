@@ -1,0 +1,623 @@
+2026-08-21 23:06:14,154 INFO adminbot: smoke_test_marker
+2026-08-21 23:12:50,741 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-21 23:12:51,072 INFO aiogram.dispatcher: Start polling
+2026-08-21 23:12:51,166 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-21 23:13:46,880 INFO aiogram.event: Update id=500595265 is handled. Duration 299 ms by bot id=8530473724
+2026-08-21 23:13:52,960 INFO aiogram.event: Update id=500595266 is handled. Duration 166 ms by bot id=8530473724
+2026-08-21 23:14:01,661 INFO aiogram.event: Update id=500595267 is handled. Duration 128 ms by bot id=8530473724
+2026-08-21 23:14:10,535 INFO aiogram.event: Update id=500595268 is handled. Duration 120 ms by bot id=8530473724
+2026-08-21 23:14:47,136 INFO aiogram.event: Update id=500595269 is handled. Duration 155 ms by bot id=8530473724
+2026-08-21 23:14:57,087 INFO adminbot: #mute chat=Radmirka | Test user=7668778536 mod=1963464540 причина: 1
+2026-08-21 23:14:57,234 WARNING adminbot: Не удалось отправить лог в канал: Telegram server says - Bad Request: chat not found
+2026-08-21 23:14:57,236 INFO aiogram.event: Update id=500595270 is handled. Duration 529 ms by bot id=8530473724
+2026-08-21 23:15:13,517 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: @flaresec
+2026-08-21 23:15:13,604 WARNING adminbot: Не удалось отправить лог в канал: Telegram server says - Bad Request: chat not found
+2026-08-21 23:15:13,605 INFO aiogram.event: Update id=500595271 is handled. Duration 383 ms by bot id=8530473724
+2026-08-21 23:15:29,014 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: плохо себя вел
+2026-08-21 23:15:29,096 WARNING adminbot: Не удалось отправить лог в канал: Telegram server says - Bad Request: chat not found
+2026-08-21 23:15:29,097 INFO aiogram.event: Update id=500595272 is handled. Duration 386 ms by bot id=8530473724
+2026-08-21 23:15:37,769 INFO aiogram.event: Update id=500595273 is handled. Duration 434 ms by bot id=8530473724
+2026-08-21 23:15:39,299 INFO aiogram.event: Update id=500595274 is handled. Duration 213 ms by bot id=8530473724
+2026-08-21 23:15:41,191 INFO adminbot: #mute chat=Radmirka | Test user=7668778536 mod=1963464540 причина: 1
+2026-08-21 23:15:41,297 WARNING adminbot: Не удалось отправить лог в канал: Telegram server says - Bad Request: chat not found
+2026-08-21 23:15:41,298 INFO aiogram.event: Update id=500595275 is handled. Duration 525 ms by bot id=8530473724
+2026-08-21 23:15:46,125 INFO aiogram.event: Update id=500595276 is handled. Duration 134 ms by bot id=8530473724
+2026-08-21 23:15:51,064 INFO aiogram.event: Update id=500595277 is handled. Duration 259 ms by bot id=8530473724
+2026-08-21 23:15:56,846 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-21 23:15:56,924 WARNING adminbot: Не удалось отправить лог в канал: Telegram server says - Bad Request: chat not found
+2026-08-21 23:15:56,925 INFO aiogram.event: Update id=500595278 is handled. Duration 513 ms by bot id=8530473724
+2026-08-21 23:17:04,521 INFO aiogram.event: Update id=500595279 is handled. Duration 144 ms by bot id=8530473724
+2026-08-21 23:18:06,433 INFO aiogram.event: Update id=500595280 is not handled. Duration 100 ms by bot id=8530473724
+2026-08-21 23:18:06,433 ERROR aiogram.event: Cause exception while process update id=500595280 by bot id=8530473724
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "1h|30m|2d|1w" at byte offset 21
+Traceback (most recent call last):
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 331, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 522, in cmd_tmute
+    await message.reply("Формат: /tmute <1h|30m|2d|1w> [причина] (реплаем или + ID)")
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\bot.py", line 514, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "1h|30m|2d|1w" at byte offset 21
+2026-08-21 23:18:57,967 INFO aiogram.event: Update id=500595281 is not handled. Duration 1 ms by bot id=8530473724
+2026-08-21 23:19:09,432 INFO aiogram.event: Update id=500595282 is not handled. Duration 2 ms by bot id=8530473724
+2026-08-21 23:19:09,432 INFO aiogram.event: Update id=500595283 is not handled. Duration 3 ms by bot id=8530473724
+2026-08-21 23:56:11,797 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-21 23:56:11,890 INFO aiogram.dispatcher: Start polling
+2026-08-21 23:56:11,982 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-21 23:56:23,429 INFO aiogram.event: Update id=500595285 is handled. Duration 246 ms by bot id=8530473724
+2026-08-21 23:56:26,229 INFO aiogram.event: Update id=500595286 is handled. Duration 31 ms by bot id=8530473724
+2026-08-21 23:56:31,678 INFO aiogram.event: Update id=500595287 is handled. Duration 21 ms by bot id=8530473724
+2026-08-21 23:57:16,238 INFO adminbot: #tmute[5м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: lox
+2026-08-21 23:57:16,353 INFO aiogram.event: Update id=500595288 is handled. Duration 660 ms by bot id=8530473724
+2026-08-21 23:57:23,687 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-21 23:57:23,801 INFO aiogram.event: Update id=500595289 is handled. Duration 668 ms by bot id=8530473724
+2026-08-21 23:57:29,209 INFO adminbot: #tmute[1м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: lox
+2026-08-21 23:57:29,322 INFO aiogram.event: Update id=500595290 is handled. Duration 640 ms by bot id=8530473724
+2026-08-21 23:59:12,050 INFO adminbot: #auto_unmute chat=-1004301862519 user=7668778536
+2026-08-22 00:00:02,971 INFO aiogram.event: Update id=500595291 is handled. Duration 21 ms by bot id=8530473724
+2026-08-22 00:00:11,715 INFO aiogram.event: Update id=500595292 is not handled. Duration 459 ms by bot id=8530473724
+2026-08-22 00:00:11,717 ERROR aiogram.event: Cause exception while process update id=500595292 by bot id=8530473724
+TypeError: unsupported operand type(s) for divmod(): 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 413, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 596, in cmd_mute
+    f"#{'tmute' if seconds else 'mute'}[{fmt_duration(seconds)}] "
+                                         ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 268, in fmt_duration
+    d, rem = divmod(seconds, 86400)
+             ~~~~~~^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for divmod(): 'NoneType' and 'int'
+2026-08-22 00:00:17,809 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-22 00:00:17,928 INFO aiogram.event: Update id=500595293 is handled. Duration 619 ms by bot id=8530473724
+2026-08-22 00:02:12,682 INFO aiogram.event: Update id=500595294 is handled. Duration 105 ms by bot id=8530473724
+2026-08-22 00:09:34,272 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 00:09:34,377 INFO aiogram.dispatcher: Start polling
+2026-08-22 00:09:34,463 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-22 00:10:11,484 INFO aiogram.event: Update id=500595295 is handled. Duration 315 ms by bot id=8530473724
+2026-08-22 00:10:31,735 INFO aiogram.event: Update id=500595296 is not handled. Duration 1 ms by bot id=8530473724
+2026-08-22 00:10:38,771 INFO aiogram.event: Update id=500595297 is handled. Duration 112 ms by bot id=8530473724
+2026-08-22 00:10:51,894 INFO aiogram.event: Update id=500595298 is not handled. Duration 2 ms by bot id=8530473724
+2026-08-22 00:10:56,935 INFO aiogram.event: Update id=500595299 is handled. Duration 227 ms by bot id=8530473724
+2026-08-22 00:10:58,817 INFO aiogram.event: Update id=500595300 is handled. Duration 338 ms by bot id=8530473724
+2026-08-22 00:11:01,177 INFO aiogram.event: Update id=500595301 is handled. Duration 179 ms by bot id=8530473724
+2026-08-22 00:11:02,595 INFO aiogram.event: Update id=500595302 is handled. Duration 209 ms by bot id=8530473724
+2026-08-22 00:11:03,907 INFO aiogram.event: Update id=500595303 is handled. Duration 171 ms by bot id=8530473724
+2026-08-22 01:19:04,618 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 01:19:04,705 INFO aiogram.dispatcher: Start polling
+2026-08-22 01:19:04,787 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-22 01:19:24,237 INFO aiogram.event: Update id=500595304 is handled. Duration 216 ms by bot id=8530473724
+2026-08-22 01:19:43,396 INFO aiogram.event: Update id=500595305 is handled. Duration 172 ms by bot id=8530473724
+2026-08-22 01:19:53,169 INFO adminbot: #filteradd chat=Radmirka | Test mod=1963464540 слово: иди нахуй
+2026-08-22 01:19:53,288 INFO aiogram.event: Update id=500595306 is handled. Duration 292 ms by bot id=8530473724
+2026-08-22 01:20:00,267 INFO aiogram.event: Update id=500595307 is handled. Duration 418 ms by bot id=8530473724
+2026-08-22 01:20:17,988 INFO aiogram.event: Update id=500595308 is handled. Duration 235 ms by bot id=8530473724
+2026-08-22 01:20:36,750 INFO adminbot: #roleadd chat=Radmirka | Test mod=1963464540 роль Долбаеб (ранг 2)
+2026-08-22 01:20:36,857 INFO aiogram.event: Update id=500595309 is handled. Duration 242 ms by bot id=8530473724
+2026-08-22 01:21:01,741 INFO aiogram.event: Update id=500595310 is handled. Duration 141 ms by bot id=8530473724
+2026-08-22 01:21:04,334 INFO aiogram.event: Update id=500595311 is handled. Duration 218 ms by bot id=8530473724
+2026-08-22 01:21:20,354 INFO aiogram.event: Update id=500595312 is handled. Duration 181 ms by bot id=8530473724
+2026-08-22 01:21:24,751 INFO aiogram.event: Update id=500595313 is handled. Duration 131 ms by bot id=8530473724
+2026-08-22 01:21:34,938 INFO aiogram.event: Update id=500595314 is not handled. Duration 93 ms by bot id=8530473724
+2026-08-22 01:21:34,938 ERROR aiogram.event: Cause exception while process update id=500595314 by bot id=8530473724
+IndexError: No item with that key
+Traceback (most recent call last):
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 565, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 1211, in cmd_role
+    await message.answer(text, reply_markup=role_pick_kb(target.id, rows))
+                                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 1150, in role_pick_kb
+    callback_data=f"role:{target_uid}:{r['rowid']}",
+                                       ~^^^^^^^^^
+IndexError: No item with that key
+2026-08-22 01:21:53,056 INFO aiogram.event: Update id=500595315 is handled. Duration 130 ms by bot id=8530473724
+2026-08-22 01:22:03,496 INFO aiogram.event: Update id=500595316 is handled. Duration 144 ms by bot id=8530473724
+2026-08-22 01:22:30,478 INFO aiogram.event: Update id=500595317 is handled. Duration 134 ms by bot id=8530473724
+2026-08-22 01:31:35,007 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 01:31:35,093 INFO aiogram.dispatcher: Start polling
+2026-08-22 01:31:35,180 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-22 01:33:35,596 INFO aiogram.event: Update id=500595318 is handled. Duration 299 ms by bot id=8530473724
+2026-08-22 01:33:39,545 INFO aiogram.event: Update id=500595319 is handled. Duration 124 ms by bot id=8530473724
+2026-08-22 01:33:41,766 INFO aiogram.event: Update id=500595320 is handled. Duration 121 ms by bot id=8530473724
+2026-08-22 01:33:48,108 INFO aiogram.event: Update id=500595321 is handled. Duration 327 ms by bot id=8530473724
+2026-08-22 01:33:52,271 INFO aiogram.event: Update id=500595322 is handled. Duration 186 ms by bot id=8530473724
+2026-08-22 01:33:55,129 INFO aiogram.event: Update id=500595323 is handled. Duration 202 ms by bot id=8530473724
+2026-08-22 01:33:56,476 INFO aiogram.event: Update id=500595324 is handled. Duration 317 ms by bot id=8530473724
+2026-08-22 01:34:01,627 INFO aiogram.event: Update id=500595325 is handled. Duration 205 ms by bot id=8530473724
+2026-08-22 01:34:08,613 WARNING adminbot: Не удалось обновить меню: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-08-22 01:34:08,696 INFO aiogram.event: Update id=500595326 is handled. Duration 182 ms by bot id=8530473724
+2026-08-22 01:34:10,698 INFO aiogram.event: Update id=500595327 is handled. Duration 203 ms by bot id=8530473724
+2026-08-22 01:34:16,089 INFO aiogram.event: Update id=500595328 is handled. Duration 218 ms by bot id=8530473724
+2026-08-22 01:34:18,831 INFO aiogram.event: Update id=500595329 is handled. Duration 283 ms by bot id=8530473724
+2026-08-22 01:34:19,854 INFO aiogram.event: Update id=500595330 is handled. Duration 171 ms by bot id=8530473724
+2026-08-22 01:52:40,864 INFO aiogram.event: Update id=1001 is not handled. Duration 6 ms by bot id=42
+2026-08-22 01:54:16,178 INFO aiogram.event: Update id=1001 is not handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:29,750 INFO aiogram.event: Update id=1001 is handled. Duration 6 ms by bot id=42
+2026-08-22 01:54:29,770 INFO aiogram.event: Update id=1002 is handled. Duration 19 ms by bot id=42
+2026-08-22 01:54:29,774 INFO aiogram.event: Update id=1003 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:29,775 INFO aiogram.event: Update id=1005 is handled. Duration 1 ms by bot id=42
+2026-08-22 01:54:42,818 INFO aiogram.event: Update id=1001 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,822 INFO aiogram.event: Update id=1002 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,825 INFO aiogram.event: Update id=1003 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,826 INFO aiogram.event: Update id=1005 is handled. Duration 1 ms by bot id=42
+2026-08-22 01:54:42,827 INFO aiogram.event: Update id=1006 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:54:42,831 INFO adminbot: #rules chat=Radmirka | Test mod=1963464540 обновил правила
+2026-08-22 01:54:42,831 INFO aiogram.event: Update id=1007 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,834 INFO aiogram.event: Update id=1009 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,838 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: спам
+2026-08-22 01:54:42,839 INFO aiogram.event: Update id=1011 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,844 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 01:54:42,844 INFO aiogram.event: Update id=1013 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:54:42,851 INFO adminbot: #mute chat=-1009990001 user=7668778536 авто-мут за варны
+2026-08-22 01:54:42,852 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: третье нарушение
+2026-08-22 01:54:42,852 INFO aiogram.event: Update id=1015 is handled. Duration 7 ms by bot id=42
+2026-08-22 01:54:42,857 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: четвёртый раз
+2026-08-22 01:54:42,857 INFO aiogram.event: Update id=1017 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,862 INFO adminbot: #mute[30м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 01:54:42,862 INFO aiogram.event: Update id=1019 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,866 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-22 01:54:42,866 INFO aiogram.event: Update id=1021 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,870 INFO adminbot: #ban[2д] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: тестовый бан
+2026-08-22 01:54:42,870 INFO aiogram.event: Update id=1023 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,874 INFO adminbot: #unban chat=Radmirka | Test user=7668778536
+2026-08-22 01:54:42,874 INFO aiogram.event: Update id=1025 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,878 INFO adminbot: #roleadd chat=Radmirka | Test mod=1963464540 роль helper2 (ранг 40)
+2026-08-22 01:54:42,878 INFO aiogram.event: Update id=1027 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,883 INFO aiogram.event: Update id=1029 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,887 INFO aiogram.event: Update id=1031 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,888 INFO aiogram.event: Update id=1033 is handled. Duration 1 ms by bot id=42
+2026-08-22 01:54:42,891 INFO aiogram.event: Update id=1034 is handled. Duration 1 ms by bot id=42
+2026-08-22 01:54:42,897 INFO aiogram.event: Update id=1035 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:54:42,900 INFO aiogram.event: Update id=1037 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,903 INFO aiogram.event: Update id=1038 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,908 INFO adminbot: #ban[навсегда] chat=Radmirka | Test user=555100200 mod=100200300 причина: попытка
+2026-08-22 01:54:42,909 INFO aiogram.event: Update id=1039 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,911 INFO aiogram.event: Update id=1041 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,914 INFO adminbot: #kick chat=Radmirka | Test user=7668778536 mod=100200300 причина: @tester
+2026-08-22 01:54:42,915 INFO aiogram.event: Update id=1043 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,919 INFO adminbot: #filteradd chat=Radmirka | Test mod=1963464540 слово: спамслово
+2026-08-22 01:54:42,920 INFO aiogram.event: Update id=1045 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:54:42,925 INFO aiogram.event: Update id=1047 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:54:42,928 INFO aiogram.event: Update id=1049 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:54:42,932 INFO aiogram.event: Update id=1051 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,936 INFO aiogram.event: Update id=1053 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,943 INFO aiogram.event: Update id=1054 is handled. Duration 6 ms by bot id=42
+2026-08-22 01:54:42,944 INFO aiogram.event: Update id=1056 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:54:42,945 INFO aiogram.event: Update id=1057 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:54:42,946 INFO aiogram.event: Update id=1058 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:54:42,953 INFO aiogram.event: Update id=1059 is handled. Duration 6 ms by bot id=42
+2026-08-22 01:54:42,957 INFO aiogram.event: Update id=1061 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,961 INFO aiogram.event: Update id=1063 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:54:42,966 INFO aiogram.event: Update id=1065 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:58:56,829 INFO aiogram.event: Update id=1001 is handled. Duration 6 ms by bot id=42
+2026-08-22 01:58:56,835 INFO aiogram.event: Update id=1002 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:58:56,840 INFO aiogram.event: Update id=1003 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,841 INFO aiogram.event: Update id=1005 is handled. Duration 1 ms by bot id=42
+2026-08-22 01:58:56,842 INFO aiogram.event: Update id=1006 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:58:56,847 INFO adminbot: #rules chat=Radmirka | Test mod=1963464540 обновил правила
+2026-08-22 01:58:56,847 INFO aiogram.event: Update id=1007 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,852 INFO aiogram.event: Update id=1009 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,856 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: спам
+2026-08-22 01:58:56,856 INFO aiogram.event: Update id=1011 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,860 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 01:58:56,861 INFO aiogram.event: Update id=1013 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,867 INFO adminbot: #mute chat=-1009990001 user=7668778536 авто-мут за варны
+2026-08-22 01:58:56,868 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: третье нарушение
+2026-08-22 01:58:56,868 INFO aiogram.event: Update id=1015 is handled. Duration 7 ms by bot id=42
+2026-08-22 01:58:56,873 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: четвёртый раз
+2026-08-22 01:58:56,873 INFO aiogram.event: Update id=1017 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,878 INFO adminbot: #mute[30м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 01:58:56,879 INFO aiogram.event: Update id=1019 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:58:56,883 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-22 01:58:56,884 INFO aiogram.event: Update id=1021 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,888 INFO adminbot: #ban[2д] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: тестовый бан
+2026-08-22 01:58:56,888 INFO aiogram.event: Update id=1023 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,892 INFO adminbot: #unban chat=Radmirka | Test user=7668778536
+2026-08-22 01:58:56,893 INFO aiogram.event: Update id=1025 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:58:56,899 INFO adminbot: #roleadd chat=Radmirka | Test mod=1963464540 роль helper2 (ранг 40)
+2026-08-22 01:58:56,899 INFO aiogram.event: Update id=1027 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:58:56,905 INFO aiogram.event: Update id=1029 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:58:56,910 INFO aiogram.event: Update id=1031 is handled. Duration 5 ms by bot id=42
+2026-08-22 01:58:56,912 INFO aiogram.event: Update id=1033 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:58:56,914 INFO aiogram.event: Update id=1034 is handled. Duration 1 ms by bot id=42
+2026-08-22 01:58:56,919 INFO aiogram.event: Update id=1035 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,922 INFO aiogram.event: Update id=1037 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:58:56,925 INFO aiogram.event: Update id=1038 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:58:56,930 INFO aiogram.event: Update id=1039 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:58:56,932 INFO aiogram.event: Update id=1041 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:58:56,935 INFO adminbot: #kick chat=Radmirka | Test user=7668778536 mod=100200300 причина: @tester
+2026-08-22 01:58:56,935 INFO aiogram.event: Update id=1043 is handled. Duration 2 ms by bot id=42
+2026-08-22 01:58:56,940 INFO adminbot: #filteradd chat=Radmirka | Test mod=1963464540 слово: спамслово
+2026-08-22 01:58:56,940 INFO aiogram.event: Update id=1045 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,946 INFO aiogram.event: Update id=1047 is handled. Duration 6 ms by bot id=42
+2026-08-22 01:58:56,950 INFO aiogram.event: Update id=1049 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:58:56,955 INFO aiogram.event: Update id=1051 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,958 INFO aiogram.event: Update id=1053 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:58:56,963 INFO aiogram.event: Update id=1054 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,964 INFO aiogram.event: Update id=1056 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:58:56,965 INFO aiogram.event: Update id=1057 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:58:56,966 INFO aiogram.event: Update id=1058 is handled. Duration 0 ms by bot id=42
+2026-08-22 01:58:56,971 INFO aiogram.event: Update id=1059 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,976 INFO aiogram.event: Update id=1061 is handled. Duration 4 ms by bot id=42
+2026-08-22 01:58:56,980 INFO aiogram.event: Update id=1063 is handled. Duration 3 ms by bot id=42
+2026-08-22 01:58:56,984 INFO aiogram.event: Update id=1065 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,028 INFO aiogram.event: Update id=1001 is handled. Duration 7 ms by bot id=42
+2026-08-22 02:01:47,032 INFO aiogram.event: Update id=1002 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,036 INFO aiogram.event: Update id=1003 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,038 INFO aiogram.event: Update id=1005 is handled. Duration 1 ms by bot id=42
+2026-08-22 02:01:47,039 INFO aiogram.event: Update id=1006 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:01:47,044 INFO adminbot: #rules chat=Radmirka | Test mod=1963464540 обновил правила
+2026-08-22 02:01:47,044 INFO aiogram.event: Update id=1007 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,049 INFO aiogram.event: Update id=1009 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,054 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: спам
+2026-08-22 02:01:47,055 INFO aiogram.event: Update id=1011 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,060 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 02:01:47,060 INFO aiogram.event: Update id=1013 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,066 INFO adminbot: #mute chat=-1009990001 user=7668778536 авто-мут за варны
+2026-08-22 02:01:47,066 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: третье нарушение
+2026-08-22 02:01:47,067 INFO aiogram.event: Update id=1015 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,071 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: снова один
+2026-08-22 02:01:47,072 INFO aiogram.event: Update id=1017 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,077 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: снова два
+2026-08-22 02:01:47,078 INFO aiogram.event: Update id=1019 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,084 INFO adminbot: #ban chat=-1009990001 user=7668778536 авто-бан за варны
+2026-08-22 02:01:47,084 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: снова три — лимит повторно
+2026-08-22 02:01:47,085 INFO aiogram.event: Update id=1021 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:01:47,090 INFO adminbot: #mute[30м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 02:01:47,090 INFO aiogram.event: Update id=1023 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,095 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-22 02:01:47,095 INFO aiogram.event: Update id=1025 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,098 INFO adminbot: #ban[2д] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: тестовый бан
+2026-08-22 02:01:47,099 INFO aiogram.event: Update id=1027 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,103 INFO adminbot: #unban chat=Radmirka | Test user=7668778536
+2026-08-22 02:01:47,103 INFO aiogram.event: Update id=1029 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,110 INFO adminbot: #roleadd chat=Radmirka | Test mod=1963464540 роль helper2 (ранг 40)
+2026-08-22 02:01:47,111 INFO aiogram.event: Update id=1031 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:01:47,117 INFO aiogram.event: Update id=1033 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,123 INFO aiogram.event: Update id=1035 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:01:47,126 INFO aiogram.event: Update id=1037 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:01:47,128 INFO aiogram.event: Update id=1038 is handled. Duration 1 ms by bot id=42
+2026-08-22 02:01:47,132 INFO aiogram.event: Update id=1039 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,135 INFO aiogram.event: Update id=1041 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:01:47,139 INFO aiogram.event: Update id=1042 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:01:47,144 INFO aiogram.event: Update id=1043 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:01:47,147 INFO aiogram.event: Update id=1045 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:01:47,150 INFO adminbot: #kick chat=Radmirka | Test user=7668778536 mod=100200300 причина: @tester
+2026-08-22 02:01:47,151 INFO aiogram.event: Update id=1047 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,155 INFO adminbot: #filteradd chat=Radmirka | Test mod=1963464540 слово: спамслово
+2026-08-22 02:01:47,155 INFO aiogram.event: Update id=1049 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,159 INFO aiogram.event: Update id=1051 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,162 INFO aiogram.event: Update id=1052 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,166 INFO aiogram.event: Update id=1054 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,170 INFO aiogram.event: Update id=1056 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,175 INFO aiogram.event: Update id=1057 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:01:47,176 INFO aiogram.event: Update id=1059 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:01:47,176 INFO aiogram.event: Update id=1060 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:01:47,177 INFO aiogram.event: Update id=1061 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:01:47,181 INFO aiogram.event: Update id=1062 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,187 INFO aiogram.event: Update id=1064 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:01:47,191 INFO aiogram.event: Update id=1066 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:01:47,194 INFO aiogram.event: Update id=1068 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,565 INFO aiogram.event: Update id=1001 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:03:08,570 INFO aiogram.event: Update id=1002 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,575 INFO aiogram.event: Update id=1003 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,577 INFO aiogram.event: Update id=1005 is handled. Duration 1 ms by bot id=42
+2026-08-22 02:03:08,578 INFO aiogram.event: Update id=1006 is handled. Duration 1 ms by bot id=42
+2026-08-22 02:03:08,585 INFO adminbot: #rules chat=Radmirka | Test mod=1963464540 обновил правила
+2026-08-22 02:03:08,585 INFO aiogram.event: Update id=1007 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:03:08,590 INFO aiogram.event: Update id=1009 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,594 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: спам
+2026-08-22 02:03:08,595 INFO aiogram.event: Update id=1011 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,599 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 02:03:08,600 INFO aiogram.event: Update id=1013 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,606 INFO adminbot: #mute chat=-1009990001 user=7668778536 авто-мут за варны
+2026-08-22 02:03:08,606 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: третье нарушение
+2026-08-22 02:03:08,606 INFO aiogram.event: Update id=1015 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:03:08,611 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: снова один
+2026-08-22 02:03:08,612 INFO aiogram.event: Update id=1017 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,617 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: снова два
+2026-08-22 02:03:08,617 INFO aiogram.event: Update id=1019 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:03:08,623 INFO adminbot: #ban chat=-1009990001 user=7668778536 авто-бан за варны
+2026-08-22 02:03:08,623 INFO adminbot: #warn chat=Radmirka | Test user=7668778536 mod=1963464540 причина: снова три — лимит повторно
+2026-08-22 02:03:08,624 INFO aiogram.event: Update id=1021 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:03:08,628 INFO adminbot: #mute[30м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: флуд
+2026-08-22 02:03:08,628 INFO aiogram.event: Update id=1023 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,633 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-22 02:03:08,633 INFO aiogram.event: Update id=1025 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,637 INFO adminbot: #ban[2д] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: тестовый бан
+2026-08-22 02:03:08,637 INFO aiogram.event: Update id=1027 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,641 INFO adminbot: #unban chat=Radmirka | Test user=7668778536
+2026-08-22 02:03:08,642 INFO aiogram.event: Update id=1029 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,650 INFO adminbot: #roleadd chat=Radmirka | Test mod=1963464540 роль helper2 (ранг 40)
+2026-08-22 02:03:08,650 INFO aiogram.event: Update id=1031 is handled. Duration 8 ms by bot id=42
+2026-08-22 02:03:08,657 INFO aiogram.event: Update id=1033 is handled. Duration 6 ms by bot id=42
+2026-08-22 02:03:08,662 INFO aiogram.event: Update id=1035 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:03:08,666 INFO aiogram.event: Update id=1037 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:03:08,667 INFO aiogram.event: Update id=1038 is handled. Duration 1 ms by bot id=42
+2026-08-22 02:03:08,671 INFO aiogram.event: Update id=1039 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,674 INFO aiogram.event: Update id=1041 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:03:08,677 INFO aiogram.event: Update id=1042 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:03:08,682 INFO aiogram.event: Update id=1043 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:03:08,684 INFO aiogram.event: Update id=1045 is handled. Duration 2 ms by bot id=42
+2026-08-22 02:03:08,687 INFO adminbot: #kick chat=Radmirka | Test user=7668778536 mod=100200300 причина: @tester
+2026-08-22 02:03:08,688 INFO aiogram.event: Update id=1047 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,692 INFO aiogram.event: Update id=1049 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,698 INFO adminbot: #filteradd chat=Radmirka | Test mod=1963464540 слово: спамслово
+2026-08-22 02:03:08,698 INFO aiogram.event: Update id=1050 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,704 INFO aiogram.event: Update id=1052 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:03:08,708 INFO aiogram.event: Update id=1054 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,712 INFO aiogram.event: Update id=1056 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,716 INFO aiogram.event: Update id=1058 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,722 INFO aiogram.event: Update id=1059 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:03:08,723 INFO aiogram.event: Update id=1061 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:03:08,724 INFO aiogram.event: Update id=1062 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:03:08,724 INFO aiogram.event: Update id=1063 is handled. Duration 0 ms by bot id=42
+2026-08-22 02:03:08,729 INFO aiogram.event: Update id=1064 is handled. Duration 4 ms by bot id=42
+2026-08-22 02:03:08,735 INFO aiogram.event: Update id=1066 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:03:08,739 INFO aiogram.event: Update id=1068 is handled. Duration 3 ms by bot id=42
+2026-08-22 02:03:08,745 INFO aiogram.event: Update id=1070 is handled. Duration 5 ms by bot id=42
+2026-08-22 02:03:10,450 INFO aiogram.event: Update id=500595331 is handled. Duration 119 ms by bot id=8530473724
+2026-08-22 02:03:25,856 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 02:03:25,933 INFO aiogram.dispatcher: Start polling
+2026-08-22 02:03:26,007 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-24 22:56:48,637 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-24 22:56:48,774 INFO aiogram.dispatcher: Start polling
+2026-08-24 22:56:48,930 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-24 22:56:59,925 INFO aiogram.event: Update id=500595332 is handled. Duration 288 ms by bot id=8530473724
+2026-08-24 22:57:07,142 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramServerError: Telegram server says - Bad Gateway
+2026-08-24 22:57:07,143 WARNING aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8530473724)
+2026-08-24 22:57:08,228 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramServerError: Telegram server says - Bad Gateway
+2026-08-24 22:57:08,229 WARNING aiogram.dispatcher: Sleep for 1.347367 seconds and try again... (tryings = 1, bot id = 8530473724)
+2026-08-24 22:58:19,808 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-08-24 22:58:19,809 WARNING aiogram.dispatcher: Sleep for 1.715121 seconds and try again... (tryings = 2, bot id = 8530473724)
+2026-08-24 22:58:26,804 INFO aiogram.dispatcher: Connection established (tryings = 3, bot id = 8530473724)
+2026-08-24 22:58:27,102 INFO aiogram.event: Update id=500595333 is handled. Duration 296 ms by bot id=8530473724
+2026-08-24 22:58:27,180 INFO aiogram.event: Update id=500595334 is handled. Duration 254 ms by bot id=8530473724
+2026-08-24 23:07:37,637 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-24 23:07:37,712 INFO aiogram.dispatcher: Start polling
+2026-08-24 23:07:37,797 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-24 23:07:45,958 INFO aiogram.event: Update id=500595338 is handled. Duration 285 ms by bot id=8530473724
+2026-08-24 23:08:02,231 INFO aiogram.event: Update id=500595339 is handled. Duration 264 ms by bot id=8530473724
+2026-08-24 23:08:07,004 INFO aiogram.event: Update id=500595340 is handled. Duration 205 ms by bot id=8530473724
+2026-08-24 23:08:18,171 INFO aiogram.event: Update id=500595341 is handled. Duration 194 ms by bot id=8530473724
+2026-08-24 23:08:27,666 INFO aiogram.event: Update id=500595342 is handled. Duration 208 ms by bot id=8530473724
+2026-08-24 23:08:33,076 INFO aiogram.event: Update id=500595343 is handled. Duration 194 ms by bot id=8530473724
+2026-08-24 23:08:38,353 INFO aiogram.event: Update id=500595344 is handled. Duration 261 ms by bot id=8530473724
+2026-08-24 23:08:43,140 INFO aiogram.event: Update id=500595345 is handled. Duration 194 ms by bot id=8530473724
+2026-08-24 23:08:44,976 INFO aiogram.event: Update id=500595346 is handled. Duration 220 ms by bot id=8530473724
+2026-08-24 23:08:46,627 INFO aiogram.event: Update id=500595347 is handled. Duration 256 ms by bot id=8530473724
+2026-08-24 23:08:58,985 INFO aiogram.event: Update id=500595348 is handled. Duration 207 ms by bot id=8530473724
+2026-08-24 23:51:11,405 INFO adminbot: #mute chat=-100123 user=666 авто-мут за варны
+2026-08-24 23:51:26,784 INFO adminbot: #mute chat=-100123 user=666 авто-мут за варны
+2026-08-24 23:51:45,136 INFO adminbot: #mute chat=-100123 user=666 авто-мут за варны
+2026-08-24 23:51:45,144 INFO adminbot: #ban chat=-100123 user=666 авто-бан за варны
+2026-08-24 23:51:45,150 INFO adminbot: #kick chat=-100123 user=666 авто-кик за варны
+2026-08-24 23:57:08,553 INFO adminbot: #mute chat=-100123 user=666 авто-мут за варны
+2026-08-24 23:57:08,562 INFO adminbot: #ban chat=-100123 user=666 авто-бан за варны
+2026-08-24 23:57:08,568 INFO adminbot: #kick chat=-100123 user=666 авто-кик за варны
+2026-08-24 23:57:08,582 WARNING adminbot: Антифлуд: This method is not mounted to a any bot instance, please call it explicilty with bot instance `await bot(method)`
+or mount method to a bot instance `method.as_(bot)` and then call it `await method`
+2026-08-24 23:57:59,769 INFO adminbot: #mute chat=-100123 user=666 авто-мут за варны
+2026-08-24 23:57:59,781 INFO adminbot: #ban chat=-100123 user=666 авто-бан за варны
+2026-08-24 23:57:59,788 INFO adminbot: #kick chat=-100123 user=666 авто-кик за варны
+2026-08-24 23:57:59,804 INFO adminbot: #flood_mute chat=-100123 user=777
+2026-08-24 23:58:17,809 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-24 23:58:17,885 INFO aiogram.dispatcher: Start polling
+2026-08-24 23:58:17,954 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-24 23:58:25,318 INFO aiogram.event: Update id=500595349 is handled. Duration 278 ms by bot id=8530473724
+2026-08-24 23:58:27,358 INFO aiogram.event: Update id=500595350 is handled. Duration 175 ms by bot id=8530473724
+2026-08-24 23:58:30,153 INFO aiogram.event: Update id=500595351 is handled. Duration 229 ms by bot id=8530473724
+2026-08-24 23:58:32,475 INFO aiogram.event: Update id=500595352 is handled. Duration 361 ms by bot id=8530473724
+2026-08-24 23:58:42,164 INFO aiogram.event: Update id=500595353 is handled. Duration 230 ms by bot id=8530473724
+2026-08-24 23:58:45,178 INFO aiogram.event: Update id=500595354 is handled. Duration 246 ms by bot id=8530473724
+2026-08-24 23:58:46,365 INFO aiogram.event: Update id=500595355 is handled. Duration 315 ms by bot id=8530473724
+2026-08-24 23:58:47,099 INFO aiogram.event: Update id=500595356 is handled. Duration 181 ms by bot id=8530473724
+2026-08-24 23:58:51,021 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-24 23:58:51,031 WARNING aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8530473724)
+2026-08-24 23:58:57,409 INFO aiogram.dispatcher: Connection established (tryings = 1, bot id = 8530473724)
+2026-08-24 23:58:57,815 INFO aiogram.event: Update id=500595357 is handled. Duration 404 ms by bot id=8530473724
+2026-08-24 23:58:59,911 INFO aiogram.event: Update id=500595358 is handled. Duration 185 ms by bot id=8530473724
+2026-08-24 23:59:02,922 INFO aiogram.event: Update id=500595359 is handled. Duration 232 ms by bot id=8530473724
+2026-08-24 23:59:05,608 INFO aiogram.event: Update id=500595360 is handled. Duration 184 ms by bot id=8530473724
+2026-08-24 23:59:06,932 INFO aiogram.event: Update id=500595361 is handled. Duration 201 ms by bot id=8530473724
+2026-08-24 23:59:09,777 INFO aiogram.event: Update id=500595362 is handled. Duration 337 ms by bot id=8530473724
+2026-08-24 23:59:19,735 INFO aiogram.event: Update id=500595363 is handled. Duration 0 ms by bot id=8530473724
+2026-08-24 23:59:19,817 INFO aiogram.event: Update id=500595364 is not handled. Duration 2 ms by bot id=8530473724
+2026-08-24 23:59:31,900 INFO aiogram.event: Update id=500595365 is handled. Duration 160 ms by bot id=8530473724
+2026-08-24 23:59:54,269 INFO aiogram.event: Update id=500595366 is not handled. Duration 3 ms by bot id=8530473724
+2026-08-25 00:00:00,724 INFO aiogram.event: Update id=500595367 is handled. Duration 21 ms by bot id=8530473724
+2026-08-25 00:00:15,587 INFO aiogram.event: Update id=500595369 is handled. Duration 0 ms by bot id=8530473724
+2026-08-25 00:00:15,881 INFO aiogram.event: Update id=500595368 is handled. Duration 883 ms by bot id=8530473724
+2026-08-25 00:00:27,392 INFO aiogram.event: Update id=500595371 is handled. Duration 0 ms by bot id=8530473724
+2026-08-25 00:00:27,533 INFO adminbot: #unmute chat=Radmirka | Test user=6628877078
+2026-08-25 00:00:27,681 INFO aiogram.event: Update id=500595370 is handled. Duration 628 ms by bot id=8530473724

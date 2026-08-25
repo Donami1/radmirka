@@ -1,0 +1,18 @@
+2026-08-22 01:31:35,007 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 01:31:35,093 INFO aiogram.dispatcher: Start polling
+2026-08-22 01:31:35,180 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-22 01:33:35,596 INFO aiogram.event: Update id=500595318 is handled. Duration 299 ms by bot id=8530473724
+2026-08-22 01:33:39,545 INFO aiogram.event: Update id=500595319 is handled. Duration 124 ms by bot id=8530473724
+2026-08-22 01:33:41,766 INFO aiogram.event: Update id=500595320 is handled. Duration 121 ms by bot id=8530473724
+2026-08-22 01:33:48,108 INFO aiogram.event: Update id=500595321 is handled. Duration 327 ms by bot id=8530473724
+2026-08-22 01:33:52,271 INFO aiogram.event: Update id=500595322 is handled. Duration 186 ms by bot id=8530473724
+2026-08-22 01:33:55,129 INFO aiogram.event: Update id=500595323 is handled. Duration 202 ms by bot id=8530473724
+2026-08-22 01:33:56,476 INFO aiogram.event: Update id=500595324 is handled. Duration 317 ms by bot id=8530473724
+2026-08-22 01:34:01,627 INFO aiogram.event: Update id=500595325 is handled. Duration 205 ms by bot id=8530473724
+2026-08-22 01:34:08,613 WARNING adminbot: Не удалось обновить меню: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-08-22 01:34:08,696 INFO aiogram.event: Update id=500595326 is handled. Duration 182 ms by bot id=8530473724
+2026-08-22 01:34:10,698 INFO aiogram.event: Update id=500595327 is handled. Duration 203 ms by bot id=8530473724
+2026-08-22 01:34:16,089 INFO aiogram.event: Update id=500595328 is handled. Duration 218 ms by bot id=8530473724
+2026-08-22 01:34:18,831 INFO aiogram.event: Update id=500595329 is handled. Duration 283 ms by bot id=8530473724
+2026-08-22 01:34:19,854 INFO aiogram.event: Update id=500595330 is handled. Duration 171 ms by bot id=8530473724
+2026-08-22 02:03:10,450 INFO aiogram.event: Update id=500595331 is handled. Duration 119 ms by bot id=8530473724

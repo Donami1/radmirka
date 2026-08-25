@@ -1,0 +1,12 @@
+2026-08-22 00:09:34,272 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-22 00:09:34,377 INFO aiogram.dispatcher: Start polling
+2026-08-22 00:09:34,463 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-22 00:10:11,484 INFO aiogram.event: Update id=500595295 is handled. Duration 315 ms by bot id=8530473724
+2026-08-22 00:10:31,735 INFO aiogram.event: Update id=500595296 is not handled. Duration 1 ms by bot id=8530473724
+2026-08-22 00:10:38,771 INFO aiogram.event: Update id=500595297 is handled. Duration 112 ms by bot id=8530473724
+2026-08-22 00:10:51,894 INFO aiogram.event: Update id=500595298 is not handled. Duration 2 ms by bot id=8530473724
+2026-08-22 00:10:56,935 INFO aiogram.event: Update id=500595299 is handled. Duration 227 ms by bot id=8530473724
+2026-08-22 00:10:58,817 INFO aiogram.event: Update id=500595300 is handled. Duration 338 ms by bot id=8530473724
+2026-08-22 00:11:01,177 INFO aiogram.event: Update id=500595301 is handled. Duration 179 ms by bot id=8530473724
+2026-08-22 00:11:02,595 INFO aiogram.event: Update id=500595302 is handled. Duration 209 ms by bot id=8530473724
+2026-08-22 00:11:03,907 INFO aiogram.event: Update id=500595303 is handled. Duration 171 ms by bot id=8530473724

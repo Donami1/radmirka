@@ -1,0 +1,88 @@
+2026-08-21 23:56:11,797 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-21 23:56:11,890 INFO aiogram.dispatcher: Start polling
+2026-08-21 23:56:11,982 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-21 23:56:23,429 INFO aiogram.event: Update id=500595285 is handled. Duration 246 ms by bot id=8530473724
+2026-08-21 23:56:26,229 INFO aiogram.event: Update id=500595286 is handled. Duration 31 ms by bot id=8530473724
+2026-08-21 23:56:31,678 INFO aiogram.event: Update id=500595287 is handled. Duration 21 ms by bot id=8530473724
+2026-08-21 23:57:16,238 INFO adminbot: #tmute[5м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: lox
+2026-08-21 23:57:16,353 INFO aiogram.event: Update id=500595288 is handled. Duration 660 ms by bot id=8530473724
+2026-08-21 23:57:23,687 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-21 23:57:23,801 INFO aiogram.event: Update id=500595289 is handled. Duration 668 ms by bot id=8530473724
+2026-08-21 23:57:29,209 INFO adminbot: #tmute[1м] chat=Radmirka | Test user=7668778536 mod=1963464540 причина: lox
+2026-08-21 23:57:29,322 INFO aiogram.event: Update id=500595290 is handled. Duration 640 ms by bot id=8530473724
+2026-08-21 23:59:12,050 INFO adminbot: #auto_unmute chat=-1004301862519 user=7668778536
+2026-08-22 00:00:02,971 INFO aiogram.event: Update id=500595291 is handled. Duration 21 ms by bot id=8530473724
+2026-08-22 00:00:11,715 INFO aiogram.event: Update id=500595292 is not handled. Duration 459 ms by bot id=8530473724
+2026-08-22 00:00:11,717 ERROR aiogram.event: Cause exception while process update id=500595292 by bot id=8530473724
+TypeError: unsupported operand type(s) for divmod(): 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 413, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steam\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 596, in cmd_mute
+    f"#{'tmute' if seconds else 'mute'}[{fmt_duration(seconds)}] "
+                                         ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\radmirka1\bot.py", line 268, in fmt_duration
+    d, rem = divmod(seconds, 86400)
+             ~~~~~~^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for divmod(): 'NoneType' and 'int'
+2026-08-22 00:00:17,809 INFO adminbot: #unmute chat=Radmirka | Test user=7668778536
+2026-08-22 00:00:17,928 INFO aiogram.event: Update id=500595293 is handled. Duration 619 ms by bot id=8530473724
+2026-08-22 00:02:12,682 INFO aiogram.event: Update id=500595294 is handled. Duration 105 ms by bot id=8530473724

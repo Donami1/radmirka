@@ -1,0 +1,30 @@
+2026-08-24 23:58:17,809 INFO adminbot: Бот запущен. Чатов в базе ждёт своих модераторов.
+2026-08-24 23:58:17,885 INFO aiogram.dispatcher: Start polling
+2026-08-24 23:58:17,954 INFO aiogram.dispatcher: Run polling for bot @radmirka_helper_bot id=8530473724 - 'Radmirka | Помощник по чату'
+2026-08-24 23:58:25,318 INFO aiogram.event: Update id=500595349 is handled. Duration 278 ms by bot id=8530473724
+2026-08-24 23:58:27,358 INFO aiogram.event: Update id=500595350 is handled. Duration 175 ms by bot id=8530473724
+2026-08-24 23:58:30,153 INFO aiogram.event: Update id=500595351 is handled. Duration 229 ms by bot id=8530473724
+2026-08-24 23:58:32,475 INFO aiogram.event: Update id=500595352 is handled. Duration 361 ms by bot id=8530473724
+2026-08-24 23:58:42,164 INFO aiogram.event: Update id=500595353 is handled. Duration 230 ms by bot id=8530473724
+2026-08-24 23:58:45,178 INFO aiogram.event: Update id=500595354 is handled. Duration 246 ms by bot id=8530473724
+2026-08-24 23:58:46,365 INFO aiogram.event: Update id=500595355 is handled. Duration 315 ms by bot id=8530473724
+2026-08-24 23:58:47,099 INFO aiogram.event: Update id=500595356 is handled. Duration 181 ms by bot id=8530473724
+2026-08-24 23:58:51,021 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-24 23:58:51,031 WARNING aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8530473724)
+2026-08-24 23:58:57,409 INFO aiogram.dispatcher: Connection established (tryings = 1, bot id = 8530473724)
+2026-08-24 23:58:57,815 INFO aiogram.event: Update id=500595357 is handled. Duration 404 ms by bot id=8530473724
+2026-08-24 23:58:59,911 INFO aiogram.event: Update id=500595358 is handled. Duration 185 ms by bot id=8530473724
+2026-08-24 23:59:02,922 INFO aiogram.event: Update id=500595359 is handled. Duration 232 ms by bot id=8530473724
+2026-08-24 23:59:05,608 INFO aiogram.event: Update id=500595360 is handled. Duration 184 ms by bot id=8530473724
+2026-08-24 23:59:06,932 INFO aiogram.event: Update id=500595361 is handled. Duration 201 ms by bot id=8530473724
+2026-08-24 23:59:09,777 INFO aiogram.event: Update id=500595362 is handled. Duration 337 ms by bot id=8530473724
+2026-08-24 23:59:19,735 INFO aiogram.event: Update id=500595363 is handled. Duration 0 ms by bot id=8530473724
+2026-08-24 23:59:19,817 INFO aiogram.event: Update id=500595364 is not handled. Duration 2 ms by bot id=8530473724
+2026-08-24 23:59:31,900 INFO aiogram.event: Update id=500595365 is handled. Duration 160 ms by bot id=8530473724
+2026-08-24 23:59:54,269 INFO aiogram.event: Update id=500595366 is not handled. Duration 3 ms by bot id=8530473724
+2026-08-25 00:00:00,724 INFO aiogram.event: Update id=500595367 is handled. Duration 21 ms by bot id=8530473724
+2026-08-25 00:00:15,587 INFO aiogram.event: Update id=500595369 is handled. Duration 0 ms by bot id=8530473724
+2026-08-25 00:00:15,881 INFO aiogram.event: Update id=500595368 is handled. Duration 883 ms by bot id=8530473724
+2026-08-25 00:00:27,392 INFO aiogram.event: Update id=500595371 is handled. Duration 0 ms by bot id=8530473724
+2026-08-25 00:00:27,533 INFO adminbot: #unmute chat=Radmirka | Test user=6628877078
+2026-08-25 00:00:27,681 INFO aiogram.event: Update id=500595370 is handled. Duration 628 ms by bot id=8530473724
