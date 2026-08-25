@@ -199,7 +199,7 @@
 ### 1. Clone the repository / Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/your-username/radmirka.git
+git clone https://github.com/Donami1/radmirka.git
 cd radmirka
 ```
 
